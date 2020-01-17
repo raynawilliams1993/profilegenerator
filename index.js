@@ -31,6 +31,14 @@ function gitHub (username,data) {
        console.log(res.data.avatar_url);
        data["bio"] = res.data.bio;
        data["profile_pic"] = res.data.avatar_url;
+       data ["location"] = res.data.location;
+       data["user_blog"] = res.data.blog;
+       data ["followers"] = res.data.followers_url;
+       data["following"] = res.data.following_url;
+       data["starred_repositories"] - res.data.starred_url;
+       data["number_of_public_repos"] = res.data.public_repos;
+       
+
        generateHtml(data)
         });
   
