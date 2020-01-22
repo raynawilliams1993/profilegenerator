@@ -68,3 +68,4 @@ function generatePDF(fileHTML, filePDF) {
     });
   }
 promptUser();
+generatePDF ();
