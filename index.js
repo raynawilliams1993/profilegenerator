@@ -58,4 +58,13 @@ function gitHub(username, data) {
         conversion.kill(); // necessary if you use the electron-server strategy, see bellow for details
     });
 }
+function generatePDF(fileHTML, filePDF) {
+    var html = fs.readFileSync(fileHTML, 'utf8');
+    // var options = { format: 'Letter' };
+    
+    pdf.create(html).toFile(filePDF, function(err, res) {
+      if (err) return console.log(err);
+      console.log(res);
+    });
+  }
 promptUser();
