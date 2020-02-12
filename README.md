@@ -7,3 +7,6 @@ technologies used;
 4)github
 5)npm
 6)node
+
+
+https://github.com/raynawilliams1993/profilegenerator/issues/1#issue-564351437
