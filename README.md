@@ -8,5 +8,4 @@ technologies used;
 5)npm
 6)node
 
-
-https://github.com/raynawilliams1993/profilegenerator/issues/1#issue-564351437
+https://github.com/raynawilliams1993/profilegenerator/issues/1#issuecomment-585479804
