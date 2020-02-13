@@ -8,4 +8,4 @@ technologies used;
 5)npm
 6)node
 
-https://github.com/raynawilliams1993/profilegenerator/issues/1#issuecomment-585479804
+![Screenshot (11)](https://user-images.githubusercontent.com/58044346/74389046-4085fc80-4dba-11ea-8f5a-085b40470f16.png)
