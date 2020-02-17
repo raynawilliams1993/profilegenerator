@@ -4,6 +4,7 @@ const util = require("util");
 const generateHtml = require("./generatehtml");
 const writeFileAsync = util.promisify(fs.writeFile);
 const axios = require("axios");
+const pdf = require("html-pdf");
 
 function promptUser() {
     return inquirer.prompt([
@@ -38,34 +39,18 @@ function gitHub(username, data) {
         data["starred_repositories"] - res.data.starred_url;
         data["number_of_public_repos"] = res.data.public_repos;
 
-        generateHtml(data)
+       const fileHTML = generateHtml(data);
+       generatePDF(fileHTML)
     });
-    var fs = require('fs'),
-        convertFactory = require('electron-html-to');
-
-    var conversion = convertFactory({
-        converterPath: convertFactory.converters.PDF
-    });
-
-    conversion({ html: '<h1>Hello World</h1>' }, function (err, result) {
-        if (err) {
-            return console.error(err);
-        }
-
-        console.log(result.numberOfPages);
-        console.log(result.logs);
-        result.stream.pipe(fs.createWriteStream('/path/to/anywhere.pdf'));
-        conversion.kill(); // necessary if you use the electron-server strategy, see bellow for details
-    });
+  
 }
-function generatePDF(fileHTML, filePDF) {
-    var html = fs.readFileSync(fileHTML, 'utf8');
-    // var options = { format: 'Letter' };
+function generatePDF(fileHTML) {
     
-    pdf.create(html).toFile(filePDF, function(err, res) {
+    
+    pdf.create(fileHTML).toFile("./output/index.pdf", function(err, res) {
       if (err) return console.log(err);
       console.log(res);
     });
   }
+
 promptUser();
-generatePDF ();

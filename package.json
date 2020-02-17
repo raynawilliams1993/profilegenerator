@@ -1,16 +1,26 @@
 {
-    "name": "profile-generator",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.19.1",
-        "electron-html-to": "^2.6.0",
-        "inquirer": "^6.3.1"
-    }
+  "name": "profilegenerator",
+  "version": "1.0.0",
+  "description": "This project was to create a github profile generator using node. The user can then run the command node index.js to test through the coomand line to display the generated pdf profile as an html file instead.",
+  "main": "generatehtml.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "html-pdf": "^2.2.0",
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raynawilliams1993/profilegenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raynawilliams1993/profilegenerator/issues"
+  },
+  "homepage": "https://github.com/raynawilliams1993/profilegenerator#readme"
 }

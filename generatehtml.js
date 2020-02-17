@@ -25,10 +25,10 @@ const colors = {
   }
 };
 
-module.exports = {
-  colors,
-  generateHTML,
-}
+// module.exports = {
+//   colors,
+//   generateHTML,
+// }
 
 function generateHTML(data) {
   return `<!DOCTYPE html>
@@ -186,7 +186,7 @@ function generateHTML(data) {
       <header class= "photo-header">
         <div class="row">
           <div class="col">
-              <img src=${data.image}/>
+              <img src=${data.avatarUrl}/>
           </div>
         </div>
         <div class="row">
@@ -241,3 +241,4 @@ function generateHTML(data) {
       </body>
     </html>`
 }
+module.exports = generateHTML;
