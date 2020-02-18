@@ -194,7 +194,7 @@ function generateHTML(data) {
               <h1>Hello!</h1>
               <h2>My GitHub username is ${data.username}</h2>
               <div class="links-nav">
-                  <a class="nav-link" target="_blank" href=${data.locationURL}>${data.location}</a>
+                  <a class="nav-link" target="_blank" href=${data.location}>${data.location}</a>
                   <a class="nav-link" target="_blank" href=${data.github}>GitHub</a>
                   <a class="nav-link" target="_blank" href=${data.blog}>Blog</a>
               </div>
@@ -217,7 +217,7 @@ function generateHTML(data) {
           <div class="col">
             <div class="card">
               <h5>GitHub Stars</h5>
-              <h6>${data.stars}</h6>
+              <h6>${data.starred_url}</h6>
             </div>
           </div>
         </div>

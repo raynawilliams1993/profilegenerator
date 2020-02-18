@@ -30,14 +30,15 @@ function gitHub(username, data) {
         console.log(res.data);
         console.log(res.data.bio);
         console.log(res.data.avatar_url);
+        data["username"]= res.data.login;
         data["bio"] = res.data.bio;
         data["profile_pic"] = res.data.avatar_url;
         data["location"] = res.data.location;
         data["user_blog"] = res.data.blog;
         data["followers"] = res.data.followers_url;
         data["following"] = res.data.following_url;
-        data["starred_repositories"] - res.data.starred_url;
-        data["number_of_public_repos"] = res.data.public_repos;
+        data["starred_url"] - res.data.starred_url;
+        data["public_repos"] = res.data.public_repos;
 
        const fileHTML = generateHtml(data);
        generatePDF(fileHTML)
