@@ -15,4 +15,5 @@ TECHNOLOGIES:
 
 ----
 PREVIEW OF PDF:
-![Screenshot (11)](https://user-images.githubusercontent.com/58044346/74389046-4085fc80-4dba-11ea-8f5a-085b40470f16.png)
+
+![Screenshot (17)](https://user-images.githubusercontent.com/58044346/74787212-d8c52b00-526b-11ea-9c6e-3f4e7f622b97.png)
