@@ -186,7 +186,7 @@ function generateHTML(data) {
       <header class= "photo-header">
         <div class="row">
           <div class="col">
-              <img src=${data.avatarUrl}/>
+              <img src=${data.profile_pic}/>
           </div>
         </div>
         <div class="row">
