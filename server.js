@@ -35,9 +35,9 @@ function gitHub(username, data) {
         data["profile_pic"] = res.data.avatar_url;
         data["location"] = res.data.location;
         data["user_blog"] = res.data.blog;
-        data["followers"] = res.data.followers_url;
-        data["following"] = res.data.following_url;
-        data["starred_url"] - res.data.starred_url;
+        data["followers"] = res.data.followers;
+        data["following"] = res.data.following;
+        data["starred"] = res.data.public_gists;
         data["public_repos"] = res.data.public_repos;
 
        const fileHTML = generateHtml(data);
