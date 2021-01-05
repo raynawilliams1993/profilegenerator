@@ -4,7 +4,7 @@
   "description": "This project was to create a github profile generator using node. The user can then run the command node index.js to test through the coomand line to display the generated pdf profile as an html file instead.",
   "main": "generatehtml.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "html-pdf": "^2.2.0",
     "inquirer": "^7.0.4"
   },
